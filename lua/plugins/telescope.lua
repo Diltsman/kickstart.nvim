@@ -48,11 +48,15 @@ return { -- Fuzzy Finder (files, lsp, etc)
       -- You can put your default mappings / updates / etc. in here
       --  All the info you're looking for is in `:help telescope.setup()`
       --
-      -- defaults = {
-      --   mappings = {
-      --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-      --   },
-      -- },
+      defaults = {
+        mappings = {
+          i = {
+            ['<C-Enter>'] = 'to_fuzzy_refine',
+            ['<Tab>'] = 'move_selection_next',
+            ['<S-Tab>'] = 'move_selection_previous',
+          },
+        },
+      },
       -- pickers = {}
       extensions = {
         ['ui-select'] = {
