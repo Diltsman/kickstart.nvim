@@ -184,6 +184,10 @@ return { -- LSP Configuration & Plugins
           },
         },
       },
+
+      zls = {
+        cmd = { 'zls' },
+      },
     }
 
     -- Ensure the servers and tools above are installed
